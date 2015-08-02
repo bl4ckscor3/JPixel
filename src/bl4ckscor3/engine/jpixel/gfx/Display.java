@@ -4,6 +4,9 @@ import java.awt.Canvas;
 
 import bl4ckscor3.engine.jpixel.Window;
 
+/**
+ * The display in which everything gets rendered
+ */
 public class Display extends Canvas
 {
 	private static final long serialVersionUID = 6138305616621720049L;

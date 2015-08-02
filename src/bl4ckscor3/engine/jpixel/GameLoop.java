@@ -3,6 +3,9 @@ package bl4ckscor3.engine.jpixel;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 
+/**
+ * The loop which constantly updates the game
+ */
 public class GameLoop implements Runnable
 {
 	/**

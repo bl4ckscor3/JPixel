@@ -7,6 +7,9 @@ import javax.swing.JFrame;
 
 import bl4ckscor3.engine.jpixel.gfx.Display;
 
+/**
+ * A simple window with a loop in it
+ */
 public class Window
 {
 	/**
@@ -41,7 +44,6 @@ public class Window
 	 * Is this window the main window?
 	 */
 	private boolean main;
-
 	/**
 	 * The display (what gets drawn on the screen)
 	 */
@@ -69,6 +71,10 @@ public class Window
 		frame = new JFrame(t);
 	}
 
+	/**
+	 * Sets up the window with the predefined values. You should never call this method twice
+	 * @throws Throws a NPE when setDisplay() hasn't been called yet.
+	 */
 	public void show()
 	{
 		if(display == null)
