@@ -70,13 +70,6 @@ public class GameLoop implements Runnable
 	}
 	
 	/**
-	 * Ticks the game every gametick
-	 */
-	public void tick()
-	{
-	}
-	
-	/**
 	 * Renders the game all the time
 	 */
 	public void render()
@@ -94,11 +87,16 @@ public class GameLoop implements Runnable
 		
 		g.clearRect(0, 0, window.getWidth(), window.getHeight());
 		//put rendering stuff between here...
-		
+		window.getDisplay().render(g);
 		//...and here
 		g.dispose();
 		bs.show();
 	}
+	
+	/**
+	 * Ticks the game every gametick
+	 */
+	public void tick(){}
 	
 	@Override
 	public void run()
